@@ -91,7 +91,7 @@ export function CardWithForm() {
             <Button onClick={() =>{setPdfUrl('')}}><Pencil />Change Pdf</Button>
             </section>
             <div className="flex justify-center items-center">
-            <a href={pdfUrl} className="text-center text-red-500" target="blank"><span>Preview</span> <FileText size={36}/></a>
+            <a href={pdfUrl} className="text-center text-red-500" target="_blank"><span>Preview</span> <FileText size={36}/></a>
             </div>
             </>
             
