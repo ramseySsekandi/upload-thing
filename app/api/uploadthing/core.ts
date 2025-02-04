@@ -3,7 +3,7 @@ import { UploadThingError } from "uploadthing/server";
 
 const f = createUploadthing();
 
-const auth = (req: Request) => ({ id: "fakeId" }); // Fake auth function
+const auth = (req: Request) => ({ id: "fakeId" }); // eslint-disable-line no-use-before-define
 
 
 // FileRouter for your app, can contain multiple FileRoutes
