@@ -13,9 +13,9 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
-module.exports ={
-  eslint:{
-    ignoreDuringBuilds:true,
+module.exports = {
+  rules: {
+    'no-unused-vars': 'off', // Disables the rule completely
   },
-}
+};
 export default eslintConfig;
