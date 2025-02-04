@@ -57,8 +57,8 @@ export function CardWithForm() {
             <p className="text-sm">Product Image</p>
             <Button onClick={() =>{setImageUrl('')}}><Pencil />Change Image</Button>
             </section>
-            <div className="w-80 h-28 relative">
-            <Image src={imageUrl} alt="product Image" fill/>
+            <div className="w-72 h-36 relative">
+            <Image src={imageUrl} alt="product Image" className="contain" fill/>
             </div>
             </>
             
@@ -88,14 +88,14 @@ export function CardWithForm() {
             <>
             <section className="flex justify-between items-center">
             <p className="text-sm">Product Pdf</p>
-            <Button onClick={() =>{setPdfUrl('')}}><Pencil />Change Image</Button>
+            <Button onClick={() =>{setPdfUrl('')}}><Pencil />Change Pdf</Button>
             </section>
-            <div className="w-80 h-28 relative">
-            <a href={pdfUrl}>Preview <FileText/></a>
+            <div className="flex justify-center items-center">
+            <a href={pdfUrl} className="text-center text-red-500"><span>Preview</span> <FileText size={36}/></a>
             </div>
             </>
             
-          ):(<UploadButton
+          ):(<UploadDropzone
           endpoint="pdfUploader"
           onClientUploadComplete={(res) => {
             // Do something with the response
