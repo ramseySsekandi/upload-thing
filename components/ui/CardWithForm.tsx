@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { UploadButton, UploadDropzone } from "@/lib/uploadthing"
+import { UploadDropzone } from "@/lib/uploadthing"
 import { IProduct } from "@/types/product"
 import { FileText, Pencil, Plus, } from "lucide-react"
 import Image from "next/image"
